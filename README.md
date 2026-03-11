@@ -1,7 +1,7 @@
-https://itsukiseominho.github.io/Minhoseo.github.io/
+https://github.com/taehyun22/taehyun22.github.io
 
 ## 저작권
 
-© 2026 서민호. All rights reserved.
+© 2026 김태현. All rights reserved.
 
-본 연구 및 프로젝트의 모든 권리는 서민호에게 있습니다.
+본 연구 및 프로젝트의 모든 권리는 김태현에게 있습니다.
