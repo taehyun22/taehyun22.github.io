@@ -1,4 +1,4 @@
-https://github.com/taehyun22/taehyun22.github.io
+https://taehyun22.github.io/taehyun22.github.io
 
 ## 저작권
 
