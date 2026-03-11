@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minhoseo / Undergraduate researcher</title>
+  <meta name="description" content="Personal academic homepage template inspired by datngo93.github.io">
+    <meta property="og:image" content="unnamed.png" />
+    <meta
+      property="og:title"
+      content="Minho Seo / Undergraduate researcher"
+    />
+    <meta
+      property="og:description"
+      content="Computer of engineering, Korea National University of Transportation"
+    />
+    <meta
+      property="og:url"
+      content="https://itsukiseominho.github.io/Minhoseo.github.io/"
+    />
+  <style>
+    :root{--accent:#0b6;--bg:#fff;--muted:#666;--max:1100px}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial;line-height:1.6;color:#111;margin:0;padding:20px;background:#f7f7f8}
+    .wrap{max-width:var(--max);margin:0 auto;background:var(--bg);padding:36px;border-radius:10px;box-shadow:0 6px 24px rgba(10,10,10,0.06)}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:150px;height:160px;border-radius:10px;background:linear-gradient(135deg,#e9f9f1,#f0fbff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:28px}
+    h1{margin:0;font-size:24px}
+    .sub{color:var(--muted);margin-top:6px}
+    .contact{margin-left:auto;text-align:right}
+    .contact a{display:inline-block;color:var(--accent);text-decoration:none;margin-left:8px}
+    nav{margin-top:18px;border-top:1px solid #eee;padding-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{color:#0b0b0b;text-decoration:none;padding:6px 10px;border-radius:8px;background:#fbfbfc;border:1px solid #f0f0f0}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:22px}
+    main{min-height:320px}
+    aside{background:#fafafa;padding:16px;border-radius:10px;border:1px solid #f0f0f0}
+    section{margin-bottom:22px}
+    .section-title{font-weight:700;margin-bottom:10px}
+    ul.pub{padding-left:18px;margin:0}
+    ul.pub li{margin-bottom:10px}
+    .small{font-size:13px;color:var(--muted)}
+    .projects img{max-width:100%;border-radius:8px;margin-top:8px}
+    footer{margin-top:28px;padding-top:18px;border-top:1px dashed #eee;color:var(--muted);font-size:13px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.contact{text-align:left;margin-top:12px}}
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr;}
+      .contact{text-align:left;margin-top:12px}
+    }
+    /* ✅ 추가: 더 작은 화면 (예: 500px 이하)에서 폰트·이미지·여백 조정 */
+    @media (max-width:500px){
+      body{padding:10px;}
+      .wrap{padding:20px;}
+      header{flex-direction:column;align-items:flex-start;gap:12px;}
+      .avatar{width:100px;height:110px;font-size:20px;} /* 아바타 이미지 축소 */
+      h1{font-size:20px;}
+      .sub{font-size:14px;}
+      .small{font-size:12px;}
+      nav{flex-direction:column;gap:8px;}
+      nav a{width:100%;}
+      .projects img{width:100%;height:auto;} /* 프로젝트 이미지 자동 맞춤 */
+    }
+ @media (max-width:500px){
+  /* header 전체 세로 정렬 */
+  header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+  }
+  /* 아바타 크기 줄이기 */
+  .avatar{
+    width:90px;
+    height:100px;
+    font-size:18px;
+  }
+  /* 이름·소속 글자 크기 줄이기 */
+  h1{
+    font-size:18px;
+    line-height:1.4;
+  }
+  .sub{
+    font-size:13px;
+  }
+  .small{
+    font-size:12px;
+  }
+  /* Quick links를 왼쪽정렬 & 글자 작게 */
+  .contact{
+    text-align:left;
+    margin-left:0;
+    margin-top:8px;
+  }
+  .contact a{
+    font-size:12px;
+    margin-left:4px;
+  }
+}
+@media (max-width:500px){
+  /* header 가로 정렬 유지 + 줄바꿈 허용 */
+  header{
+    flex-direction:row;    /* 가로 */
+    flex-wrap:wrap;        /* 공간 부족하면 밑으로 */
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  /* 아바타 크기 줄이기 */
+  .avatar{
+    width:80px;
+    height:90px;
+    font-size:16px;
+    flex-shrink:0; /* 줄어들지 않도록 */
+  }
+
+  /* 텍스트 부분 폭 지정 */
+  header > div{
+    flex:1 1 auto;
+    min-width:180px;  /* 최소폭 */
+  }
+
+  /* 이름, 소속 폰트 축소 */
+  h1{
+    font-size:18px;
+    line-height:1.3;
+  }
+  .sub{font-size:13px;}
+  .small{font-size:12px;}
+
+  /* Quick links를 오른쪽에 붙이기 */
+  .contact{
+    text-align:right;
+    margin-left:auto;
+    width:100%;
+  }
+  .contact a{
+    font-size:12px;
+    margin-left:6px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="avatar" src="FileController.jpeg" alt="Minho Seo">
+      <div>
+        <h1>Minho Seo <span class="small">(Undergraduate researcher)</span></h1>
+        <div class="sub">Department of Computer Engineering <br> Korea National University of Transportation, Choung-ju</div>
+        <div class="small">Email: <a href="mailto:you@school.edu">alffks56102@gmail.com</a> • <a href="#schedule">Schedule an appointment</a></div>
+      </div>
+      <div class="contact">
+        <div class="small">Quick links</div>
+        <div><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#teaching">Teaching</a></div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#bio">Biography</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Journal Papers</a>
+      <a href="#conference">Conference Papers</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="grid">
+      <main>
+        <section id="bio">
+          <div class="section-title">Biography</div>
+          <p>I am a computer scientist pursuing a Bachelor’s degree at Korea National University of Transportation. My research focuses on the intersection of image processing and information security, with recent work expanding from drone and radar studies to image dehazing sensor development.</p>
+        <li>EVALAB, 2025. Embedded Vision & AI Lab, KNUT, Korea <a href="https://chipeval.github.io/homepage/">LAB</a></li>
+        </section>
+
+        <section id="research">
+          <div class="section-title">Research interests</div>
+          <p class="small">Machine learning /  Digital signal and video processing / information security / Embedded system design</p>
+        </section>
+
+        <section id="publications">
+          <div class="section-title">Journal Papers</div>
+          <ul class="pub">
+            <li>1. Minho Seo, Dat Ngo, Jeongmin Park — <em> [KCI] DepthAware_3D_Fog_Synthesis_with_Temporal_Consistenc</em>. Journal, 2026. <a href="안개합성논문_제출용.pdf" target="_blank">PDF</a>. | <a href="https://www.dbpia.co.kr/">DOI</a></li>
+            <li>2. Minho Seo, Ye-Eun Kim, Seong-Sik You, Dat Ngo, Jeongmin Park — <em>OVERFLOW Dat Ngo</em>. Journal, 2025. <a href="#">PDF</a> | <a href="#">DOI</a></li>
+            
+          </ul>
+        </section>
+
+        <section id="conference">
+          <div class="section-title">Conference Papers</div>
+          <ul class="pub">
+            <li>1. Minho Seo — Conference paper, 2025. <a href="#">PDF</a></li>
+            
+          </ul>
+        </section>
+
+        <section id="projects">
+          <div class="section-title">Projects</div>
+          <div class="projects">
+            <strong>Depth-Aware 3D Fog Synthesis with Temporal Consistenc</strong>
+            <p class="small">Existing Method A uses a Homogeneous Fog Model that overlays fog of uniform density across the entire screen. This approach is like simply placing a transparent gray layer over an image, failing to reproduce the physical scattering phenomenon according to the distance between the observer and objects.</p>
+            <img src="ok.png" alt="project"><br><br>
+            <strong>Blind image restoration</strong>
+            <p class="small">Image Dehazing Techniques for Enhanced Visual Perception and Sensor Applications</p>
+            <img src="2_1.bmp.jpg" alt="project">
+
+            <strong style="display:block;margin-top:12px">BMP Image AI</strong>
+            <p class="small">Image processing on the bmp.</p>
+            <img src="6_2.bmp.jpg" alt="project2">
+          </div>
+        </section>
+
+        <section id="teaching">
+          <div class="section-title">Ongoing work</div>
+          <p class="small">OVERFLOW Student Club President (2025) • Undergraduate Research Assistant in Dat Ngo’s Lab (2025) •<br> Signals and Systems (2025)</p>
+        </section>
+
+      </main>
+
+      <aside>
+        <section id="news">
+          <div class="section-title">News</div>
+          <p class="small">Our research laboratory is located in **Room 314, W18 Building, Korea National University of Transportation**.
+We are dedicated to advancing research and education in [intersection of image processing].
+Through collaborative projects and innovative approaches, our lab aims to contribute to both academic knowledge and practical applications.
+</p>
+        </section>
+
+        <section id="contact">
+          <div class="section-title">Contact</div>
+          <p class="small">Email: <a href="mailto:you@school.edu">alffks56102@gmail.com</a><br>Office : **Room 314, W18 Building, Korea National University of Transportation** <br>Schedule: <a href="#">Book an appointment</a></p>
+        </section>
+
+        <section id="toc">
+          <div class="section-title">Table of content</div>
+          <p class="small">Awards / Journal Papers / Conference Papers / Tools & Datasets / Teaching / Projects</p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      © Minho Seo — Last updated: <span id="updated">2026-01-12</span>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'});} 
+      });
+    });
+
+    // Auto-fill last-updated date (optional)
+    // document.getElementById('updated').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
+
+
